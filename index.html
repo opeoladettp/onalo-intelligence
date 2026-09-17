@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishaaq Onalo | Cyber Threat Intelligence & Spatial Data Analytics</title>
+  <meta name="description" content="Official portfolio and intelligence portal of Ishaaq Onalo — MSc Crime Intelligence & Data Analytics Specialist in spatial GIS modeling, Python/SQL threat pipelines, and enterprise security telemetry.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <svg viewBox="0 0 64 64" width="38" height="38">
+          <rect width="64" height="64" rx="10" fill="#091322" stroke="#00E5FF" stroke-width="1.5"/>
+          <polygon points="32,12 50,23 50,41 32,52 14,41 14,23" fill="none" stroke="#00E5FF" stroke-width="2" opacity="0.7"/>
+          <circle cx="32" cy="32" r="8" fill="none" stroke="#00FFFF" stroke-width="2"/>
+          <circle cx="32" cy="32" r="3" fill="#00FFFF"/>
+        </svg>
+        <div class="brand-name">
+          ISHAAQ ONALO
+          <small>THREAT & SPATIAL INTELLIGENCE</small>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#overview" class="nav-link">Intelligence Focus</a></li>
+        <li><a href="#capabilities" class="nav-link">Core Frameworks</a></li>
+        <li><a href="#research" class="nav-link">Case Studies</a></li>
+        <li><a href="#credentials" class="nav-link">Honors & Degrees</a></li>
+        <li><a href="#contact" class="nav-link">Advisory Briefing</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-cyan">Request Briefing</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Console Menu">
+        <span class="material-symbols-outlined">terminal</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       HERO SECTION (High-Tech Telemetry HUD)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hud-tag">
+            <span class="pulse-dot"></span>
+            SYSTEM: THREAT TELEMETRY & SPATIAL MODELING ACTIVE
+          </div>
+          <h1 class="hero-title">
+            Transforming Complex Security Telemetry into <span>Actionable Threat Intelligence</span>.
+          </h1>
+          <p class="hero-desc">
+            Lead Cyber Threat Intelligence and Spatial Data Analytics Specialist. Bridging physical surveillance infrastructure, GIS spatial-temporal crime modeling, Python/SQL telemetry pipelines, and enterprise risk governance.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-cyan">
+              <span class="material-symbols-outlined">shield</span>
+              Request Security Consultation
+            </a>
+            <a href="#research" class="btn btn-outline-cyan">
+              <span class="material-symbols-outlined">query_stats</span>
+              Review Spatial Research
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>MSc</h4>
+              <p>Data & Intelligence</p>
+            </div>
+            <div class="stat-item">
+              <h4>99.8%</h4>
+              <p>Threat Audit Fidelity</p>
+            </div>
+            <div class="stat-item">
+              <h4>50K+</h4>
+              <p>Telemetry Logs Parsed</p>
+            </div>
+            <div class="stat-item">
+              <h4>2X</h4>
+              <p>National Tech Awardee</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-hud-card">
+            <div class="hud-header">
+              <div class="hud-window-controls">
+                <span class="hud-dot red"></span>
+                <span class="hud-dot yellow"></span>
+                <span class="hud-dot green"></span>
+              </div>
+              <div>ONALO-TELEMETRY-NODE // V4.1</div>
+            </div>
+
+            <div class="hud-media-container">
+              <img src="images/hero-analyst.webp" alt="Ishaaq Onalo Cyber Threat Intelligence Specialist in Tech Operations Room">
+              <div class="hud-telemetry-overlay">
+                <div class="telemetry-row">
+                  <span>ANALYSIS STATUS:</span>
+                  <span style="color: var(--color-green-radar);">ONLINE & MONITORING</span>
+                </div>
+                <div class="telemetry-row">
+                  <span>TIMESTAMP:</span>
+                  <span id="telemetryTimestamp">2026-09-17 10:30:00 UTC</span>
+                </div>
+                <div class="telemetry-row">
+                  <span>GIS CLUSTER SIGNATURE:</span>
+                  <span id="telemetryHash">0x7F4A89C2</span>
+                </div>
+                <div class="telemetry-row">
+                  <span>SPECIALIST:</span>
+                  <span>ISHAAQ ONALO, MSc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       OVERVIEW & INTELLIGENCE METHODOLOGY
+       ========================================================================= -->
+  <section class="section-padding" id="overview">
+    <div class="container">
+      <div class="text-center">
+        <div class="hud-tag">
+          <span class="material-symbols-outlined">account_tree</span>
+          Integrated Defense Philosophy
+        </div>
+        <h2 class="section-title">Bridging <span>Digital Analytics</span> with Physical Infrastructure Defense</h2>
+        <p class="section-subtitle">
+          Modern threats do not operate in silos. Ishaaq Onalo integrates deep open-source intelligence (OSINT), spatial GIS telemetry, and enterprise access governance into unified threat mitigation ecosystems.
+        </p>
+      </div>
+
+      <div class="capabilities-grid">
+        <div class="cap-card">
+          <div class="cap-icon">
+            <span class="material-symbols-outlined">map</span>
+          </div>
+          <h3>Spatial-Temporal GIS Threat Modeling</h3>
+          <p>
+            Pioneering advanced spatial mapping frameworks that correlate socioeconomic deprivation indexes with localized incident heatmaps, pinpointing critical vulnerability vectors before escalations occur.
+          </p>
+          <div class="cap-tech-tags">
+            <span>ArcGIS / QGIS</span>
+            <span>Spatial Clustering</span>
+            <span>Predictive Geofencing</span>
+            <span>Hotspot Detection</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <span class="material-symbols-outlined">data_object</span>
+          </div>
+          <h3>Automated Threat Intelligence Pipelines</h3>
+          <p>
+            Architecting robust Python and SQL data processing pipelines to ingest multi-source telemetry, system access ledgers, and open-source threat logs into structured risk dashboards.
+          </p>
+          <div class="cap-tech-tags">
+            <span>Python (Pandas/NumPy)</span>
+            <span>SQL Telemetry Pipelines</span>
+            <span>Pattern Recognition</span>
+            <span>Log Parsing</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <span class="material-symbols-outlined">security</span>
+          </div>
+          <h3>OSINT & Threat Actor Profiling</h3>
+          <p>
+            Leveraging structured cyber threat intelligence frameworks and deep open-source reconnaissance (OSINT) to profile emerging attack vectors, monitor unauthorized access vectors, and safeguard digital assets.
+          </p>
+          <div class="cap-tech-tags">
+            <span>OSINT Frameworks</span>
+            <span>Attack Surface Mapping</span>
+            <span>Threat Attribution</span>
+            <span>Vulnerability Audits</span>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <span class="material-symbols-outlined">verified_user</span>
+          </div>
+          <h3>Enterprise Security & Incident Governance</h3>
+          <p>
+            Combining frontline physical security leadership, CCTV control-room operations, SIA compliance, and ACT counter-terrorism protocols with rigorous evidence-grade incident reporting standards.
+          </p>
+          <div class="cap-tech-tags">
+            <span>CCTV Telemetry</span>
+            <span>SIA Licensed</span>
+            <span>RIDDOR Compliance</span>
+            <span>ACT Counter-Terrorism</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FEATURED RESEARCH & CASE STUDIES
+       ========================================================================= -->
+  <section class="section-padding projects-section" id="research">
+    <div class="container">
+      <div class="text-center">
+        <div class="hud-tag">
+          <span class="material-symbols-outlined">science</span>
+          Applied Research & Deployment
+        </div>
+        <h2 class="section-title">Featured <span>Case Studies</span> & Technical Impact</h2>
+        <p class="section-subtitle">
+          Real-world implementations demonstrating how data science and spatial analytics optimize proactive threat mitigation across high-risk environments.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-spatial.webp" alt="Urban Crime and Spatial GIS Deprivation Model">
+            <span class="project-badge">MSc Research Project</span>
+          </div>
+          <div class="project-body">
+            <h3>Urban Spatial Threat Modeling</h3>
+            <p>
+              Engineered a spatial-temporal risk model evaluating urban crime telemetry against socioeconomic deprivation metrics in England, revealing actionable spatial clusters for targeted resource allocation.
+            </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> Pinpointed high-density spatial crime corridors using Python & GIS data pipelines.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-telemetry.webp" alt="Real-time CCTV & Access Telemetry Monitoring">
+            <span class="project-badge">Enterprise Telemetry</span>
+          </div>
+          <div class="project-body">
+            <h3>Security Telemetry & Surveillance Control</h3>
+            <p>
+              Directed real-time multi-screen CCTV surveillance and access control logs at Rubyclean Services, establishing structured surveillance audit ledgers that curtailed perimeter breaches.
+            </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> 40% reduction in unauthorized access incidents via telemetry log optimization.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-surveillance.webp" alt="Evidence-Based Incident Governance Framework">
+            <span class="project-badge">Operational Governance</span>
+          </div>
+          <div class="project-body">
+            <h3>Evidence-Grade Incident Framework</h3>
+            <p>
+              Standardized incident reporting and threat documentation workflows across high-footfall public venues with Vistech Services, ensuring seamless emergency coordination and statutory compliance.
+            </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> Streamlined de-escalation response protocols and multi-agency reporting.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CREDENTIALS, ACCOLADES & CERTIFICATIONS
+       ========================================================================= -->
+  <section class="section-padding" id="credentials">
+    <div class="container">
+      <div class="text-center">
+        <div class="hud-tag">
+          <span class="material-symbols-outlined">military_tech</span>
+          Verified Credentials
+        </div>
+        <h2 class="section-title">Academic Degrees & <span>Industry Honors</span></h2>
+        <p class="section-subtitle">
+          Demonstrated technical excellence backed by post-graduate qualifications, national technology awards, and professional compliance certifications.
+        </p>
+      </div>
+
+      <div class="credentials-grid">
+        <div class="cred-card">
+          <div class="cred-icon">
+            <span class="material-symbols-outlined">school</span>
+          </div>
+          <h4>MSc in Crime Intelligence & Data Analytics</h4>
+          <span class="cred-org">Teesside University, United Kingdom</span>
+          <p>
+            Advanced practice curriculum covering Python & SQL for intelligence, cyber security protocols, forensic spatial analysis, and predictive threat algorithms.
+          </p>
+        </div>
+
+        <div class="cred-card">
+          <div class="cred-icon">
+            <span class="material-symbols-outlined">trophy</span>
+          </div>
+          <h4>National Tech Honors</h4>
+          <span class="cred-org">BoICT & NiTA Awards</span>
+          <p>
+            Conferred <strong>Youth ICT Personality of the Year (2019)</strong> by BoICT and <strong>Tech Professional of the Year (2021)</strong> by Nigeria Technology Awards (NiTA).
+          </p>
+        </div>
+
+        <div class="cred-card">
+          <div class="cred-icon">
+            <span class="material-symbols-outlined">fact_check</span>
+          </div>
+          <h4>Professional Certifications</h4>
+          <span class="cred-org">UK Security & Compliance</span>
+          <p>
+            SIA Door Supervisor Licensed, ACT Counter-Terrorism Certified, Level 3 Emergency First Aid at Work (RQF), and Fire Safety & RIDDOR Risk Assessment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECURITY BRIEFING & CONTACT FORM
+       ========================================================================= -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Info Panel -->
+        <div class="contact-info-panel">
+          <div class="info-header">
+            <div class="hud-tag">
+              <span class="material-symbols-outlined">lock</span>
+              Encrypted Channel
+            </div>
+            <h3>Request an Intelligence Briefing</h3>
+            <p>
+              Available for specialized advisory, spatial threat modeling commissions, enterprise telemetry audits, and data intelligence consultations.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            <div class="channel-item">
+              <span class="material-symbols-outlined">location_on</span>
+              <div class="channel-details">
+                <h5>Primary Operating Hub</h5>
+                <p>Middlesbrough / North East England, United Kingdom</p>
+              </div>
+            </div>
+
+            <div class="channel-item">
+              <span class="material-symbols-outlined">mail</span>
+              <div class="channel-details">
+                <h5>Direct Intelligence Inquiries</h5>
+                <p style="color: var(--color-cyan-primary);">ishaaqonalo@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="channel-item">
+              <span class="material-symbols-outlined">phone_iphone</span>
+              <div class="channel-details">
+                <h5>Direct Advisory Line</h5>
+                <p style="color: var(--color-cyan-primary);">+44 7448 172577</p>
+              </div>
+            </div>
+
+            <div class="channel-item">
+              <span class="material-symbols-outlined">link</span>
+              <div class="channel-details">
+                <h5>Professional Network</h5>
+                <p>linkedin.com/in/ishaaqonalo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Panel -->
+        <div class="form-panel">
+          <form id="securityBriefingForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="inquirerName" class="form-label">Full Name / Stakeholder *</label>
+                <input type="text" id="inquirerName" class="form-control" placeholder="e.g. Dr. Marcus Adebayo" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inquirerEmail" class="form-label">Corporate / Institutional Email *</label>
+                <input type="email" id="inquirerEmail" class="form-control" placeholder="e.g. m.adebayo@enterprise.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="serviceType" class="form-label">Consultation Domain *</label>
+                <select id="serviceType" class="form-control" required>
+                  <option value="" disabled selected>Select Intelligence Focus</option>
+                  <option value="Spatial GIS Threat Modeling">Spatial GIS Threat & Crime Modeling</option>
+                  <option value="Cyber Threat Intelligence & OSINT">Cyber Threat Intelligence & OSINT Audit</option>
+                  <option value="Telemetry Pipeline Engineering">Python/SQL Telemetry Pipeline Architecture</option>
+                  <option value="Enterprise Security Governance">Enterprise Access & Physical Security Audit</option>
+                  <option value="Academic Collaboration">Research & Academic Collaboration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="organizationName" class="form-label">Organization / Agency</label>
+                <input type="text" id="organizationName" class="form-control" placeholder="e.g. CyberRisk Analytics Ltd">
+              </div>
+
+              <div class="form-group full-width">
+                <label for="briefingDetails" class="form-label">Project Scope & Intelligence Objectives</label>
+                <textarea id="briefingDetails" class="form-control" placeholder="Specify your dataset parameters, threat landscape, or operational audit requirements..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-cyan" style="width: 100%;">
+              <span class="material-symbols-outlined">send</span>
+              Dispatch Briefing Request
+            </button>
+            <p class="form-note">
+              [ENCRYPTED PROTOCOL] Requests are reviewed confidentially within 24 operational hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <svg viewBox="0 0 64 64" width="32" height="32">
+              <rect width="64" height="64" rx="8" fill="#091322" stroke="#00E5FF" stroke-width="1.5"/>
+              <polygon points="32,12 50,23 50,41 32,52 14,41 14,23" fill="none" stroke="#00E5FF" stroke-width="2"/>
+            </svg>
+            <div class="brand-name">
+              ISHAAQ ONALO
+              <small>THREAT & SPATIAL SYSTEMS</small>
+            </div>
+          </div>
+          <p>
+            Advanced analytics, geospatial modeling, and structured incident response safeguarding modern organizational assets.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Focus</h5>
+          <ul class="footer-links">
+            <li><a href="#overview">Spatial GIS Modeling</a></li>
+            <li><a href="#overview">Python Threat Pipelines</a></li>
+            <li><a href="#overview">OSINT Actor Profiling</a></li>
+            <li><a href="#overview">CCTV Telemetry Audits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Credentials</h5>
+          <ul class="footer-links">
+            <li><a href="#credentials">MSc Crime Intelligence</a></li>
+            <li><a href="#credentials">BoICT Youth ICT Leader</a></li>
+            <li><a href="#credentials">NiTA Tech Professional</a></li>
+            <li><a href="#credentials">SIA & ACT Certifications</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><span style="color: var(--color-cyan-primary);">Email:</span> ishaaqonalo@gmail.com</li>
+            <li><span style="color: var(--color-cyan-primary);">Phone:</span> +44 7448 172577</li>
+            <li><span style="color: var(--color-cyan-primary);">Location:</span> Middlesbrough, United Kingdom</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ishaaq Onalo. Threat & Spatial Intelligence. All Rights Reserved.</p>
+        <p>SYSTEM STATUS: SECURE // ENCRYPTION AES-256 GCM</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       SUCCESS MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="successModal">
+    <div class="modal-card">
+      <div class="modal-icon">
+        <span class="material-symbols-outlined">verified</span>
+      </div>
+      <h3>Briefing Request Received</h3>
+      <p>
+        Thank you, <strong id="modalInquirerName">Stakeholder</strong>. Your inquiry has been logged into the secure telemetry console. Ishaaq Onalo will review your project parameters and respond promptly.
+      </p>
+      <button class="btn btn-cyan" id="closeModalBtn" style="width: 100%;">
+        Acknowledge & Return
+      </button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
