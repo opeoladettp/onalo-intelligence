@@ -97,36 +97,59 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModalBtn = document.getElementById('closeModalBtn');
 
   if (briefingForm) {
-    briefingForm.addEventListener('submit', (e) => {
+    briefingForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const name = document.getElementById('inquirerName').value.trim();
-      const email = document.getElementById('inquirerEmail').value.trim();
+      const name        = document.getElementById('inquirerName').value.trim();
+      const email       = document.getElementById('inquirerEmail').value.trim();
       const serviceType = document.getElementById('serviceType').value;
+      const org         = document.getElementById('organizationName').value.trim();
+      const details     = document.getElementById('briefingDetails').value.trim();
 
       if (!name || !email || !serviceType) {
-        alert('Please provide your name, corporate email address, and service area.');
+        alert('Please provide your name, corporate email address, and consultation domain.');
         return;
       }
 
-      const submitBtn = briefingForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
+      const submitBtn   = briefingForm.querySelector('button[type="submit"]');
+      const originalHTML = submitBtn.innerHTML;
 
       submitBtn.innerHTML = '<span class="material-symbols-outlined" style="animation: spin 1s linear infinite;">sync</span> Encrypting & Dispatching...';
-      submitBtn.disabled = true;
+      submitBtn.disabled  = true;
 
-      setTimeout(() => {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        briefingForm.reset();
+      try {
+        const res = await fetch('https://api.formsend.ezeroandone.io/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            api_key:      '78fc8f961b965daa52ae33d2cc85cc035a9cd813c6490c74811e1dd4a42db643',
+            name:         name,
+            email:        email,
+            subject:      `Intelligence Briefing Request – ${serviceType}`,
+            message:      details || '(No additional details provided.)',
+            organization: org || undefined,
+          }),
+        });
 
-        const clientSpan = document.getElementById('modalInquirerName');
-        if (clientSpan) clientSpan.textContent = name;
+        const data = await res.json();
 
-        if (successModal) {
-          successModal.classList.add('active');
+        if (data.success) {
+          briefingForm.reset();
+
+          const clientSpan = document.getElementById('modalInquirerName');
+          if (clientSpan) clientSpan.textContent = name;
+
+          if (successModal) successModal.classList.add('active');
+        } else {
+          alert(`Dispatch failed: ${data.message || 'An unknown error occurred. Please try again.'}`);
         }
-      }, 850);
+      } catch (err) {
+        console.error('FormSend error:', err);
+        alert('A network error occurred. Please check your connection and try again.');
+      } finally {
+        submitBtn.innerHTML = originalHTML;
+        submitBtn.disabled  = false;
+      }
     });
   }
 
